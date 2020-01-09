@@ -1,6 +1,6 @@
 # Craiglist Clone.
 
-_Its a craiglist clone with react fron and node.js backend , it uses react-router to handel all the html request's._
+_Its a craiglist clone with react front-end and node.js backend , it uses react-router to handel all the html request's._
 
 _Following are the used technologies_
 
