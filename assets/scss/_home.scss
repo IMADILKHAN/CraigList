@@ -1,0 +1,84 @@
+.home{
+    color: white;
+    h1{
+        font-size: 4rem;
+        text-align: center;
+        text-transform: capitalize;
+        padding:  90px 0;
+    }
+    h5{
+        background: rgba(0,0,0,0.6);
+        text-align: center;
+        color: #FF7183;
+    }
+    .links{
+        background: rgba(0,0,0,0.6);
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        margin-bottom: 70px;
+        .categories{
+            .title{
+                color: white;
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+                font-weight: 700;
+                text-decoration: none;
+                margin-bottom: 1rem;
+                display: block;
+            }
+            .group-links{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+
+                .link{
+                    font-weight: 300;
+                    font-size: 0.8rem;
+                    text-decoration: none;
+                    padding: 4px;
+                    color: white;
+                    &:hover{
+                        color:#FF7183;
+                    }
+                }
+            }
+        }
+    }
+
+    .trending{
+        max-width: 700px;
+        margin: 0 auto;
+        .search{
+            width: 100%;
+            outline: none;
+            font-size: 2rem;
+            border-radius: 6px;
+            border: 1px solid black;
+            padding: 8px;
+            margin-right:auto;
+            color: #5D6680;
+        }
+        .title{
+            font-size: 1rem;
+            text-align: center;
+            padding: 20px;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        .trending-tags{
+            text-align: center;
+            .tag{
+                padding: 8.5px 15px;
+                border-radius: 45px;
+                border: 1px solid #fff;
+                display: inline-block;
+                margin-bottom: 20px;
+                margin-right: 20px;
+                &:hover{
+                    background:rgba(0,0,0,1);
+                }
+            }
+        }
+    }
+}

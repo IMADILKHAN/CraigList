@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "reset";
+@import 'home';
+@import "listings";
+@import 'details';
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'Roboto' , sans-serif;
+    background-image: url("https://images.unsplash.com/26/city-scape.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+header{
+    color: white;
+    padding:20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    .fas{
+        margin-left: 10px;
+    }
+    .left_menu{
+        display: flex;
+        cursor: pointer;
+         .logo{
+             color: white;
+             text-decoration: none;
+             cursor: pointer;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             font-size: 2rem;
+         }
+         .city-dropdown{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             position: relative;
+             padding: 15px 20px;
+             .scroll-area{
+                 border-radius: 6px;
+                 position: absolute;
+                 top: 35px;
+                 left: 0;
+                 min-width: 160px;
+                 background: rgba(0,0,0,0.4);
+                 padding: 15px;
+                 cursor: pointer;
+                 visibility: hidden;
+                 opacity: 0;
+                 transition: all .4s ease-in-out;
+                 &.active{
+                     visibility: visible;
+                     top: 50;
+                     opacity: 1;
+                 }
+                 ul{
+                     li{
+                         padding: 15px;
+                         &:hover{
+                             background-color: rgba(0,0,0,0.2);
+                              border: 0.5px solid #FF7183;
+                             border-radius: 6px;
+                         }
+                     }
+                 }
+             }
+         }
+    }
+
+    .right_menu{
+        display: flex;
+        cursor: pointer;
+         .user_img{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         .user_dropdown{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             padding: 15px 20px;
+         }
+
+            .post-btn{
+                padding: 15px 20px;
+                font-weight: 300;
+                text-transform: capitalize;
+                background: rgb(119,196,255);
+                color: white;
+                border-radius: 6px;
+         }
+    }
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}

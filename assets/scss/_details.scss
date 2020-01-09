@@ -1,0 +1,169 @@
+.details-page{
+    background: #f5f5f5;
+    padding: 20px 0px;
+    .white-box{
+        padding: 20px;
+        background: white;
+    }
+    .submenu{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        .sub-links{
+            display: flex;
+            flex-direction: row;
+            & > a{
+                color: white;
+                background: #25274D;
+                padding: 10px 20px;
+                border-radius: 6px;
+                text-decoration: none;
+                margin-right: 10px;
+                font-size: 0.9rem;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .direction{
+            display: flex;
+            flex-direction: row;
+            & > a{
+                border-radius: 6px;
+                color: white;
+                background: #25274D;
+                padding: 10px 20px;
+                margin-right: 10px;
+                text-decoration: none;
+                font-size: 0.9rem;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
+
+    .content-area{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap: 20px;
+
+        .media-column{
+            .gallery{
+                .slider{
+                    .main-image{
+                        position: relative;
+                        .arrows{
+                            top: 0px;
+                            bottom: 0px;
+                            padding: 0px 15px;
+                            height: 100%;
+                            background: rgba(0,0,0,0.6);
+                            position: absolute;
+                            cursor: pointer;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1.8rem;
+                            opacity: 0.3;
+                            &.left-arrow{
+                                left: 0px;
+                            }
+                            &.right-arrow{
+                                right: 0px;
+                            }
+
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                        .image-1{
+                            width:100%;
+                            height: 400px;
+                            background-size:cover;
+                            background-position: center center;
+                            background-size: no-repeat;
+                        }
+                    }
+                }
+                .thumbnails{
+                    margin-top: 25px;
+                    display: grid;
+                    grid-template-columns: repeat(6,0fr);
+                    grid-row-gap: 5px;
+                    grid-column-gap: 3px;
+                    justify-content: center;
+                    .thumb-img{
+                        width:80px;
+                        height: 80px;
+                        background-size:cover;
+                        background-position: center center;
+                        background-size: no-repeat;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .details-column{
+        .date{
+            font-size: 0.8rem;
+            color: grey;
+            margin-bottom: 15px;
+        }
+        .title{
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        .price{
+            font-size: 1.5rem;
+            color: green;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .more-details{
+            padding-bottom:25px;
+            margin-bottom: 25px;
+            margin-bottom: 25px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 15px;
+            border-bottom: 1px solid #ebebeb;
+            .info{
+                label{
+                    font-weight: 500;
+                    font-size: 0.7rem;
+                    text-transform: capitalize;
+                    margin-bottom: 6px;
+                    display: block;
+                }
+
+                h5{
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                }
+            }
+        }
+        .description{
+            color:#5D6680;
+            p{
+                font-size: 0.9rem;
+                line-height: 1.5;
+                margin-bottom:1.5rem;
+            }
+            .desc-label{
+                color: black;
+                padding-bottom: 6px;
+                display: block;
+                font-size: 0.7rem;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
