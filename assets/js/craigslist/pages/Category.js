@@ -100,7 +100,9 @@ export default class Category extends Component {
 			});
 		}
 	};
-
+// ----------------------------------------
+// filtering 
+// ------------------------------------------
 	showMakeModelDropdown = () => {
 		const { match, location, history } = this.props;
 
