@@ -69,7 +69,9 @@ export default class Category extends Component {
 				});
 		}
 	}
-
+// ---------------------------------------
+// 	looping through categories
+// ---------------------------------------	
 	loopItems = () => {
 		const { match, history } = this.props;
 		if (this.state.itemsData != undefined) {
