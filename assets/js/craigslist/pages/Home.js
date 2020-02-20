@@ -21,7 +21,7 @@ export default class Home extends Component {
 		axios
 			.get(`/api/${match.params.city}`)
 			.then(function(response) {
-				//123
+				//handle sucess
 				self.setState(
 					{
 						categoriesData: response.data
